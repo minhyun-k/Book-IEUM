@@ -8,17 +8,14 @@ import BookStore from '../../stores/BookStore';
 import { useRouter } from 'next/router';
 
 
-
-
 const BannerBox = (props) => {
   const router = useRouter();
   const detailMove = (item) => {
     router.push({
         pathname: '/Detail',
-        query: { itemId: item.itemId },
+        query: { itemId: item.itemId, itemTitle: item.title },
     });
   };
-
 
   return (
     <Swiper
@@ -59,7 +56,7 @@ const ContentListMain1 = (props) => {
   const detailMove = (item) => {
     router.push({
         pathname: '/Detail',
-        query: { itemId: item.itemId },
+        query: { itemId: item.itemId, itemTitle: item.title },
     });
   };
 
@@ -84,7 +81,7 @@ const ContentListMain2 = (props) => {
   const detailMove = (item, cate) => {
     router.push({
         pathname: '/Detail',
-        query: { itemId: item.itemId},
+        query: { itemId: item.itemId, itemTitle: item.title},
     });
   };
 
@@ -106,13 +103,11 @@ const ContentListMain2 = (props) => {
 }
 
 const ContentListMain3 = (props) => {
-
-
   const router = useRouter();
   const detailMove = (item,mainCateNum) => {
     router.push({
         pathname: '/Detail',
-        query: { itemId: item.itemId, mainCateNum: mainCateNum  },
+        query: { itemId: item.itemId, mainCateNum: mainCateNum, itemTitle: item.title  },
     });
   };
 

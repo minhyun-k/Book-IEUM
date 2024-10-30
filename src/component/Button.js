@@ -12,7 +12,7 @@ const ButtonAll = ({ category }) => {
 
 const ButtonArrow = () => {
     return(
-        <Link href="../CommentList?itemId=&itemCover=&itemTitle=">
+        <Link href="../CommentList">
           <button className={s.contentTitle4_btn}></button>
         </Link>
     )
@@ -24,4 +24,6 @@ const ButtonArrowBack = ()=>{
   )
 }
 
-export {ButtonAll, ButtonArrow,ButtonArrowBack}
+
+
+export {ButtonAll, ButtonArrow, ButtonArrowBack}
