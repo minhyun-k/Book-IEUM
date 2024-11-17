@@ -50,37 +50,69 @@ React와 SCSS로 사용자가 쉽게 탐색할 수 있도록 깔끔한 UI/UX를 
 
 ##  :file_folder: 폴더 구조
 Book-IEUM/
+<br />
 ├── public/                          # 정적 파일들 (HTML, 이미지 등)
+<br />
 │   ├── index.html                   # HTML 템플릿 파일
+<br />
 │   └── ...
+<br />
 ├── src/                             # 소스 코드 디렉토리
+<br />
 │   ├── assets/                      # 이미지, 폰트, 아이콘 등 정적 자원
+<br />
 │   │   └── logo.png                 # 예시: 로고 이미지
+<br />
 │   ├── components/                  # 재사용 가능한 컴포넌트들
+<br />
 │   │   ├── Button.js                # 버튼 컴포넌트
+<br />
 │   │   ├── BookCard.js              # 책 카드 컴포넌트
+<br />
 │   │   └── ...
+<br />
 │   ├── pages/                       # 페이지 컴포넌트들 (각각의 페이지 화면)
+<br />
 │   │   ├── Home.js                  # 홈 페이지 컴포넌트
+<br />
 │   │   ├── BookList.js              # 도서 목록 페이지
+<br />
 │   │   ├── BookDetail.js            # 도서 상세 페이지
+<br />
 │   │   └── ...
+<br />
 │   ├── redux/                       # Redux 관련 파일들
+<br />
 │   │   ├── store.js                 # Redux 스토어 설정
+<br />
 │   │   ├── actions.js               # Redux 액션들
+<br />
 │   │   └── reducers.js              # Redux 리듀서들
+<br />
 │   ├── services/                    # API 통신 파일들 (Axios 설정 등)
+<br />
 │   │   └── api.js                   # API 요청 함수들
+<br />
 │   ├── styles/                      # 스타일 파일들 (CSS, SCSS, Styled Components 등)
+<br />
 │   │   ├── globalStyles.js          # 전역 스타일
+<br />
 │   │   └── theme.js                 # 테마 관련 설정 (색상, 폰트 등)
+<br />
 │   ├── App.js                       # 애플리케이션의 루트 컴포넌트
+<br />
 │   ├── index.js                     # 애플리케이션의 엔트리 포인트
+<br />
 │   ├── App.css                      # App 관련 스타일
+<br />
 │   └── ...
+<br />
 ├── .gitignore                       # Git에서 무시할 파일/폴더 목록
+<br />
 ├── package.json                     # 프로젝트 의존성 및 설정
+<br />
 ├── README.md                        # 프로젝트 설명 (리드미 파일)
+<br />
 └── LICENSE                          # 프로젝트 라이선스 (MIT 등)
 
 <br />
