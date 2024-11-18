@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- logo -->
-<img src="[/loading-1.png]" width="400"/>
+<img src="[/loading-1.png](https://github.com/minhyun-k/Book-IEUM/blob/main/public/loading-1.png)" width="400"/>
 
 ### IEUM 🖍️
 
