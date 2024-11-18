@@ -39,10 +39,10 @@ React와 SCSS로 사용자가 쉽게 탐색할 수 있도록 깔끔한 UI/UX를 
 
 이 프로젝트는 다양한 최신 기술을 활용하여 구현되었습니다.
 
-- **React**: 프론트엔드 라이브러리로, 컴포넌트 기반 UI를 구현
-- **Redux**: 애플리케이션 상태 관리
+- **NEXT**: 프론트엔드 프레임워크, 컴포넌트 기반 UI를 구현
+- **Zustand**: 애플리케이션 상태 관리
 - **Axios**: API 통신을 위한 HTTP 클라이언트
-- **Styled Components**: CSS-in-JS 방식으로 컴포넌트 스타일링
+- **SASS**: CSS 방식으로 컴포넌트 스타일링
 - **Vercel**: 배포 플랫폼 (배포 사이트: [https://book-ieum.vercel.app/](https://book-ieum.vercel.app/))
 - **GitHub**: 버전 관리 및 협업 도구
 
