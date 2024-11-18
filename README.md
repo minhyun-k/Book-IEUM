@@ -30,7 +30,7 @@ React와 SCSS로 사용자가 쉽게 탐색할 수 있도록 깔끔한 UI/UX를 
 |화면 명|
 |:---:|
 <video width="450" controls>
-  <source src="https://github.com/minhyun-k/Book-IEUM/blob/main/public/loading.webm" type="video/webm">
+  <source src="/loading.webm" type="video/webm">
 </video>
 |<img src="https://github.com/minhyun-k/Book-IEUM/blob/main/public/loading.webm" width="450"/>|
 |<video src="https://github.com/minhyun-k/Book-IEUM/blob/main/public/loading.webm" width="450" height="450"/>|
