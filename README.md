@@ -31,7 +31,6 @@ React와 SCSS로 사용자가 쉽게 탐색할 수 있도록 깔끔한 UI/UX를 
 |:---:|
 <video width="450" controls>
   <source src="https://raw.githubusercontent.com/minhyun-k/Book-IEUM/main/public/loading.webm" type="video/webm">
-  Your browser does not support the video tag.
 </video>
 
 |<img src="https://github.com/minhyun-k/Book-IEUM/blob/main/public/loading.webm" width="450"/>|
