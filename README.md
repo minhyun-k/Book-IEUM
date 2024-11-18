@@ -29,7 +29,7 @@ React와 SCSS로 사용자가 쉽게 탐색할 수 있도록 깔끔한 UI/UX를 
 ### 화면 구성
 |화면 명|
 |:---:|
-|<img src="https://user-images.githubusercontent.com/80824750/208456048-acbf44a8-cd71-4132-b35a-500047adbe1c.gif" width="450"/>|
+|<img src="https://github.com/minhyun-k/Book-IEUM/blob/main/public/loading.webm" width="450"/>|
 |<video src="https://github.com/minhyun-k/Book-IEUM/blob/main/public/loading.webm" width="450" height="450"/>|
 |화면에 대한 설명을 입력합니다.|
 
