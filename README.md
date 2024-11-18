@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- logo -->
-<img src="" width="400"/>
+<img src="/loading-1.png" width="400"/>
 
 ### IEUM 🖍️
 
@@ -21,6 +21,11 @@ React와 SCSS로 사용자가 쉽게 탐색할 수 있도록 깔끔한 UI/UX를 
 [GitHub Repository](https://github.com/minhyun-k/Book-IEUM.git)
 <br />
 
+## 💁‍♂️ 프로젝트 팀원
+강민현, 윤경빈, 이홍영
+
+
+<br />
 ### 화면 구성
 |화면 명|
 |:---:|
@@ -171,6 +176,4 @@ Book-IEUM/
 
 
 
-<br />
 
-## 💁‍♂️ 프로젝트 팀원
