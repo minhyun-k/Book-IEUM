@@ -1,7 +1,7 @@
 <div align="center">
 
 <!-- logo -->
-<img src="https://github.com/minhyun-k/Book-IEUM/blob/main/public/loading-1.png" width="400" height="400"/>
+<img src="https://github.com/minhyun-k/Book-IEUM/blob/main/public/mypage.gif" width="400" height="400"/>
 
 ### IEUM 🖍️
 
