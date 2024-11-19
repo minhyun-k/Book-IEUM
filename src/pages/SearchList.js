@@ -60,7 +60,7 @@ const SearchList = () => {
                 searchItemPublisher: item.publisher,
                 searchItemLink: item.link,
                 searchItemBestRank: item.bestRank,
-                searchItemCustomerReviewRank: item.customerReviewRank,
+                searchItemCustomerReviewRank: item.customerReviewRank
             },
         });
     };
