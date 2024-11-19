@@ -21,8 +21,19 @@ React와 SCSS로 사용자가 쉽게 탐색할 수 있도록 깔끔한 UI/UX를 
 [GitHub Repository](https://github.com/minhyun-k/Book-IEUM.git)
 <br />
 
+## 🗓 프로젝트 일정
+**총 일정 2024.10.4 ~ 2024.10.30**
+10.4 ~ 10.8 주제선정 및 기획
+10.8 ~ 10.11 디자인 및 화면 구성
+10.12 ~ 10.22 프로젝트 진행
+10.23 ~ 10.27 점검 및 오류 수정
+10.27 ~ 10.30 프로젝트 리뷰
+
+
+<br />
+
 ## 💁‍♂️ 프로젝트 팀원
-강민현, 윤경빈, 이홍영
+강민현(팀장, 디자인, 데이터), 윤경빈(디자인, 데이터), 이홍영(로그인)
 
 
 <br />
@@ -48,81 +59,12 @@ React와 SCSS로 사용자가 쉽게 탐색할 수 있도록 깔끔한 UI/UX를 
 
 <br />
 
-##  :file_folder: 폴더 구조
-Book-IEUM/
-<br />
-├── public/                          # 정적 파일들 (HTML, 이미지 등)
-<br />
-│   ├── index.html                   # HTML 템플릿 파일
-<br />
-│   └── ...
-<br />
-├── src/                             # 소스 코드 디렉토리
-<br />
-│   ├── assets/                      # 이미지, 폰트, 아이콘 등 정적 자원
-<br />
-│   │   └── logo.png                 # 예시: 로고 이미지
-<br />
-│   ├── components/                  # 재사용 가능한 컴포넌트들
-<br />
-│   │   ├── Button.js                # 버튼 컴포넌트
-<br />
-│   │   ├── BookCard.js              # 책 카드 컴포넌트
-<br />
-│   │   └── ...
-<br />
-│   ├── pages/                       # 페이지 컴포넌트들 (각각의 페이지 화면)
-<br />
-│   │   ├── Home.js                  # 홈 페이지 컴포넌트
-<br />
-│   │   ├── BookList.js              # 도서 목록 페이지
-<br />
-│   │   ├── BookDetail.js            # 도서 상세 페이지
-<br />
-│   │   └── ...
-<br />
-│   ├── redux/                       # Redux 관련 파일들
-<br />
-│   │   ├── store.js                 # Redux 스토어 설정
-<br />
-│   │   ├── actions.js               # Redux 액션들
-<br />
-│   │   └── reducers.js              # Redux 리듀서들
-<br />
-│   ├── services/                    # API 통신 파일들 (Axios 설정 등)
-<br />
-│   │   └── api.js                   # API 요청 함수들
-<br />
-│   ├── styles/                      # 스타일 파일들 (CSS, SCSS, Styled Components 등)
-<br />
-│   │   ├── globalStyles.js          # 전역 스타일
-<br />
-│   │   └── theme.js                 # 테마 관련 설정 (색상, 폰트 등)
-<br />
-│   ├── App.js                       # 애플리케이션의 루트 컴포넌트
-<br />
-│   ├── index.js                     # 애플리케이션의 엔트리 포인트
-<br />
-│   ├── App.css                      # App 관련 스타일
-<br />
-│   └── ...
-<br />
-├── .gitignore                       # Git에서 무시할 파일/폴더 목록
-<br />
-├── package.json                     # 프로젝트 의존성 및 설정
-<br />
-├── README.md                        # 프로젝트 설명 (리드미 파일)
-<br />
-└── LICENSE                          # 프로젝트 라이선스 (MIT 등)
-
-<br />
-
 ## :wrench: 주요 기능 및 특징
 
 1. **서비스 접속 초기화면**: 접속 시 splash 화면이 나타난 뒤, 본 페이지가 로드됩니다.
 
 2. **홈 화면**:
-   - 홈 화면은 4가지 도서 리스트로 구성되어 있으며, 각 리스트는 **스와이퍼** 기능을 제공합니다.
+   - 홈 화면은 4가지 도서 리스트로 구성되어 있으며, 각 리스트는 알라딘 api 서버 요청을 통해 다른 데이터베이스 없이 직접 요청으로 불러와 각 목록에 적합한 데이터를 출력하도록 했으며, 각각의 리스트는 스와이퍼 기능을 제공합니다.
    - 베스트셀러 및 블로거 추천 도서 목록은 각 순위가 표시됩니다.
    - 신간 도서는 일정 시간이 지나면 자동으로 업데이트되어 새로운 책이 표시됩니다.
    - 편집자 추천 리스트는 **탭버튼**을 사용하여 카테고리별로 책을 추천합니다.
@@ -167,6 +109,161 @@ Book-IEUM/
 문제: 검색을 통해 요청하는 데이터와 리스트 페이지에서 요청하는 데이터가 달라, 상세페이지에서 오류가 발생했습니다.
 
 해결: 검색 결과 페이지와 리스트 페이지에서 각각 다른 API 요청을 하도록 수정했습니다. **router.query** 값을 사용해 각 페이지의 요청을 조건별로 처리하고, 각 페이지에 맞는 데이터를 정확하게 반환하도록 수정하여 상세페이지 오류를 해결했습니다.
+
+### 3. **홈 화면 각 리스트 별 데이터 요청이 서로 달라 무한 랜더링 발생**
+
+문제: 카테고리별 리스트를 출력할 때, 컴포넌트를 이용하여 다른 서버요청 실행으로 인해 홈 화면의 서버요청이 반복되어 무한 랜더링이 발생하였습니다.
+
+해결: 랜더링을 실행할 때, 서로 다른 전역 변수에 저장하는 방법을 사용하여 서버요청으로 인한 전역변수의 변화가 서로 다르게 하여 반복적인 서버요청을 하지 않도록 해결했습니다.
+
+<br />
+
+##  :file_folder: 폴더 구조
+Book-IEUM/
+<br />
+├── 📂public/                          # 이미지, 폰트, 아이콘 등 정적 자원
+<br />
+│   ├── 📂icon
+<br />
+│   │   └── logo.png                 # 예시: 로고 이미지
+<br />
+│   └── ...
+<br />
+├── 📂src/                             # 소스 코드 디렉토리
+<br />
+│   ├── 📂components/                  # 재사용 가능한 컴포넌트들
+<br />
+│   │   ├── 📜Button.js               # 버튼 컴포넌트
+<br />
+│   │   ├── 📜Footer.js               # 푸터 컴포넌트
+<br />
+│   │   ├── 📜Header.js               # 헤더 컴포넌트
+<br />
+│   │   ├── 📜loadingScreen.js        # 로딩화면 컴포넌트
+<br />
+│   │   ├── 📜MockupComponent.js      # 어플 목업 컴포넌트
+<br />
+│   │   ├── 📜Modal.js                # 모달 컴포넌트
+<br />
+│   │   ├── 📜search.js               # 검색박스 컴포넌트
+<br />
+│   │   ├── 📂contents/                # 재사용 가능한 컴포넌트들(컨텐츠)
+<br />
+│   │   │  ├── 📜ContentCard.js               # 컨텐츠카드 컴포넌트
+<br />
+│   │   │  └── 📜ContentList.js               # 컨텐츠리스트 컴포넌트
+<br />
+│   ├── 📂lib/                         # firebase 관련
+<br />
+│   │   └── 📜firebase.js              # firebase
+<br />
+│   ├── 📂pages/                       # 각 화면 파일들
+<br />
+│   │   ├── 📂api/                # api 관련 파일(데이터 및 서버)
+<br />
+│   │   │  ├──  📂auth/                # 로그인 nextauth 관련
+<br />
+│   │   │  │  └── 📜[...nextauth].js               # nextauth(로그인api 관련)
+<br />
+│   │   │  ├── 📜aladin.js               # api 서버요청
+<br />
+│   │   │  ├── 📜hello.js             
+<br />
+│   │   │  └── 📄알라딘 api 저장.txt      # api 요청시 필요한 url 등의 정보             
+<br />
+│   │   ├── 📂fonts/                # 폰트 적용
+<br />
+│   │   │  ├── 📄GeistMonoVF.woff               
+<br />
+│   │   │  └── 📄GeistVF.woff               # 컨텐츠리스트 컴포넌트
+<br />
+│   │   ├── 📂page/                # 재사용 가능한 컴포넌트들(컨텐츠)
+<br />
+│   │   │  ├──  📂member/                # 로그인 관련 페이지
+<br />
+│   │   │  │  ├── 📜CreateAcount.js        # 회원가입
+<br />
+│   │   │  │  ├── 📜Finded.js              # 아이디찾기
+<br />
+│   │   │  │  ├── 📜Login.js               # 로그인
+<br />
+│   │   │  │  ├── 📜Membercorrection.js    # 회원수정
+<br />
+│   │   │  │  └── 📜Mypage.js              # 마이페이지
+<br />
+│   │   ├── 📜_app.js                      
+<br />
+│   │   ├── 📜_document.js                 
+<br />
+│   │   ├── 📜Book.js                      # 도서 목록 페이지
+<br />
+│   │   ├── 📜CommentList.js               # 코멘트 목록 페이지
+<br />
+│   │   ├── 📜Detail.js                    # 상세페이지
+<br />
+│   │   ├── 📜index.js                     # 화면 출력
+<br />
+│   │   ├── 📜Main.js                      # 메인 홈페이지
+<br />
+│   │   └── 📜SearchList.js               # 도서 검색 목록 페이지
+<br />
+│   ├── 📂store/                    # 상태관리(zustand)
+<br />
+│   │   └── 📜BookStore.js                   # zustand 사용 상태관리
+<br />
+│   ├── 📂styles/                      # 스타일 파일들 (CSS, SCSS, Styled Components 등)
+<br />
+│   │   ├── 📂css/                # css 파일
+<br />
+│   │   │  ├──  📂component/                # component 스타일 파일
+<br />
+│   │   │  │  ├──  📂content/                # 컨텐츠 스타일 파일
+<br />
+│   │   │  │  │  ├── 🖌contentCard.module.scss        # 컨텐츠카드 스타일
+<br />
+│   │   │  │  │  └── 🖌contentList.module.scss        # 컨텐츠리스트 스타일
+<br />
+│   │   │  │  ├── 🖌button.module.scss                # 버튼
+<br />
+│   │   │  │  ├── 🖌footer.module.scss                # 푸터
+<br />
+│   │   │  │  ├── 🖌header.module.scss                # 헤더
+<br />
+│   │   │  │  ├── 🖌MockupComponent.module.scss       # 목업
+<br />
+│   │   │  │  └── 🖌Search.module.scss                # 검색
+<br />
+│   │   │  ├──  📂page/                # page 스타일 파일
+<br />
+│   │   │  │  ├── 🖌book.module.scss                # 도서 목록 페이지
+<br />
+│   │   │  │  ├── 🖌comment.module.scss             # 코멘트페이지
+<br />
+│   │   │  │  ├── 🖌detail.module.scss              # 상세페이지
+<br />
+│   │   │  │  ├── 🖌main.module.scss                # 메인 홈페이지
+<br />
+│   │   │  │  ├── 🖌member.module.scss              # 로그인 관련 페이지(로그인, 회원가입, 회원수정, 마이페이지, 아이디찾기)
+<br />
+│   │   │  │  └── 🖌SearchList.module.scss          # 검색 목록 페이지
+<br />
+│   │   ├── 🖌globals.css          # 전역 스타일
+<br />
+│   │   └── 🖌Home.module.css                 # 테마 관련 설정 (색상, 폰트 등)
+<br />
+├── 📄.env                             # 민감한 정보나 환경 변수를 안전하게 관리
+<br />
+├── 📄.exlintrc.json                   # Git에서 무시할 파일/폴더 목록
+<br />
+├── 📄.gitignore                       # Git에서 무시할 파일/폴더 목록
+<br />
+├── 📄next.config.mjs                  # Next.js 프로젝트의 주요 설정을 정의하는 파일
+<br />
+├── 📄package.json                     # 프로젝트 의존성 및 설정
+<br />
+├── 📄package-lock.json                # 프로젝트의 빌드 및 실행 동작을 커스터마이즈
+<br />
+└── 📄README.md                        # 프로젝트 라이선스 (MIT 등)
 
 
 
